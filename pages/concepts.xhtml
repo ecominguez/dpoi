@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div id="header">
+    <h1>Práctica 1</h1>
+</div>
+<div id="index" class="nav">
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#El_br">Uso de br</a></li>
+        <li><a href="#definitions">Definiciones</a></li>
+        <li><a href="#table">Tabla</a></li>
+        <li><a href="#form">Formulario</a></li>
+        <li><a href="users.xhtml">Users</a></li>
+    </ul>
+</div>
+
+    <!-- La siguiente linea no hace nada o eso percibo (Preguntar a Alvaro)-->
+    <p class="panel">This is another paragraph with a css class attribute.</p>
+
+<div id="El_br">
+    <h2>Sobre el br</h2>
+    <!-- Como hago para escapear el <br/> ?-->
+    <p> Por ejemplo en una cancion si camina el poner el '<br/>' porque es fija la longitud de la linea debiendo respetar los
+        renglones, pero en los casos donde hay mucho que decir, como es este caso, sin el br se deja que el browser
+        maneje los saltos de renglon. dependiendo del size de la ventana del browser, lo mejor y recomendado es no forzar el retorno de carro. Capito!?</p>
+    <h3>Ejemplo con una canción</h3>
+    <p>Hubo un tiempo que fui hermoso<br/> y fui libre de verdad<br/>guardaba todos mis sueños<br/>en castillos de
+        cristal<br/>Te encontrare una mañana, dentro de mi habitación y prepararas la cama para dos</p>
+</div>
+<div>
+    <h2>Listas</h2>
+<h3 id="definitions">Definition</h3>
+<dl>
+    <dt>URI</dt>
+    <dd>Explicacion de URI</dd>
+    <dt>URL</dt>
+    <dd>Explicacion de URL</dd>
+    <dt>HTML</dt>
+    <dd>Explicacion de HTML</dd>
+    <dt>XHTML</dt>
+    <dd>Explicacion de XHTML</dd>
+    <dt>CSS</dt>
+    <dd>Explicacion de CSS</dd>
+</dl>
+
+    <!-- para que son los id en los attributos -->
+    <h3>Bullet</h3>
+   <ul id="Bullet list" >
+       <li>Primero</li>
+       <li>Segundo</li>
+       <li>Tercero</li>
+       <li>Cuarto</li>
+   </ul>
+    <p>Si la quiero con numeros en lugar de bullets ... </p>
+    <h3>Numbered</h3>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+
+    </ol>
+</div>
+<div id="form">
+    <h2>Formulario</h2>
+    <form>
+        <div>
+        <label for="user">Usuario:</label>
+        <input type="text" id="user"/>
+        </div>
+    <div>
+        <label for="street">Calle:</label>
+        <input type="text" id="street"/>
+</div>
+    <div>
+        <label for="state">Provincia:</label>
+        <select id="state">
+            <option value="capitalfederal">Capital Federal</option>
+            <option value="buenosaires">Buenos Aires</option>
+            <option value="formosa">Formosa</option>
+        </select>
+</div>
+    <div>
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate"/>
+</div>
+        <div>
+            <button type="button" id="send">Send</button>
+            <button type="button" id="cancel">Cancel</button>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
