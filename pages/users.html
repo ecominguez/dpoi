@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+</head>
+<body>
+<div id="header">
+    <meta charset="UTF-8"/>
+    <h1>Usuarios</h1>
+</div>
+<div id="body-container">
+    <div id="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2">Nombre</th>
+                <th rowspan="2">Apellido</th>
+                <th rowspan="2">Email</th>
+                <th rowspan="2">Teléfono</th>
+                <th colspan="3">Acciones</th>
+            </tr>
+            <tr>
+                <th>Ver</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>Colunga</td>
+                <td>pedro@gmail.com</td>
+                <td>1593932323</td>
+                <td><img src="/dpoi/img/calendar.gif" alt="calendario"/></td>
+                <td><img src="/dpoi/img/edit.jpg" alt="edición"/></td>
+                <td><img src="/dpoi/img/delete.jpg" alt="borrar"/></td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>Cominguez</td>
+                <td>spock@gmail.com</td>
+                <td>1593232323</td>
+                <td><img src="/dpoi/img/calendar.gif" alt="calendario"/></td>
+                <td><img src="/dpoi/img/edit.jpg" alt="edición"/></td>
+                <td><img src="/dpoi/img/delete.jpg" alt="borrar"/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="form-container">
+        <h2>Formulario</h2>
+        <form action="">
+            <div id="user-section">
+                <h3>Usuario</h3>
+                <div id="user-inputs">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name"/>
+                    <label for="last-name">Apellido</label>
+                    <input type="text" id="last-name"/>
+                    <label for="email">Email</label>
+                    <input type="text" id="email"/>
+                    <label for="phone">Teléfono</label>
+                    <input type="text" id="phone"/>
+                </div>
+            </div>
+            <div id="address-section">
+                <div>
+                    <h3>Dirección</h3>
+                    <div id="address-inputs">
+                        <label for="street">Calle</label>
+                        <input type="text" id="street"/>
+                        <label for="state">Provincia:</label>
+                        <select id="state">
+                            <option value="capitalfederal">Capital Federal</option>
+                            <option value="buenosaires">Buenos Aires</option>
+                            <option value="formosa">Formosa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="form-actions">
+                <button type="button" id="send">Enviar</button>
+                <button type="button" id="cancel">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <h4>Gracias Spock por haberme pasado tu TP 1</h4>
+</div>
+</body>
+</html>
