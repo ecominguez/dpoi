@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Modal from "./components/modal/Modal";
-import UserTable from "./components/users/table/Table";
+import Modal from './components/modal/Modal';
+import UserTable from './components/users/table/Table';
+import listUsers from './components/users/UserUtils'
 import './App.css';
-import UserForm from "./components/users/form/Form";
 
 class App extends Component {
 
@@ -12,8 +12,10 @@ class App extends Component {
             users:[],
             loadingData: true
         };
+
         this.successfulLoading = this.successfulLoading.bind(this);
-        this.listUsers().then(
+
+        listUsers().then(
             response => {
                 this.successfulLoading(JSON.parse(response).payload.items)
             },
@@ -27,19 +29,6 @@ class App extends Component {
            loadingData: false,
            users: users
        });
-    }
-
-    listUsers() {
-        return new Promise((resolve, reject) => {
-            const req = new XMLHttpRequest();
-            req.open('GET', listUsersURL);
-            req.onload = () =>
-                (req.status === 200) ?
-                    resolve(req.response) :
-                    reject(Error(req.statusText));
-            req.onerror = (err) => reject(err);
-            req.send();
-        })
     }
 
     render() {
@@ -66,7 +55,5 @@ class App extends Component {
         );
     }
 }
-
-const listUsersURL = 'http://dpoi2012api.appspot.com/api/1.0/list_delay?credential=dpoi';
 
 export default App;
